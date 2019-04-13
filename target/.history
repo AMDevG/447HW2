@@ -1,0 +1,63 @@
+compile fp1.scala
+compile
+run
+run swap
+run fp1
+run fp1.scala
+console
+scala helloWorld.scala
+exit
+scalac fp1.scala
+scala
+compile
+run
+run fp1.scala
+compile
+run fp1.scala
+run
+run fp1
+compile
+run fp1
+run
+compile
+run 98
+compile
+run 98
+compile
+run 98
+compile
+run 98
+compile
+run 100
+compile
+run
+compile
+run
+cls
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+exit
