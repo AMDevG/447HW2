@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\jberr\Desktop\hw\src\main\scala\fp1.scala:138:27: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
-[0m[[0m[31merror[0m] [0m[0m required: Int[0m
-[0m[[0m[31merror[0m] [0m[0m   	if(xs.isEmpty) println("List is empty")[0m
-[0m[[0m[31merror[0m] [0m[0m   	                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\jberr\Desktop\hw\src\main\scala\fp1.scala:63:4: Unmatched closing brace '}' ignored here[0m
+[0m[[0m[31merror[0m] [0m[0m  	}[0m
+[0m[[0m[31merror[0m] [0m[0m  	^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

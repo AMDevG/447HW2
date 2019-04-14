@@ -7,20 +7,5 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- EX06 - sum[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- EX07 - sumTail[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- EX08 - max[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- EX09 - maxTailAux *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  TestFailedException was thrown during property evaluation. (fp1tests.scala:100)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    Message: -1 did not equal 15[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    Location: (fp1tests.scala:101)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    Occurred at table row 0 (zero based, not counting headings), which had values ([0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m      xs = List(15),[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m      max (xs) = 15[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    )[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- EX10 - otpu *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  TestFailedException was thrown during property evaluation. (fp1tests.scala:115)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    Message: null did not equal List(20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    Location: (fp1tests.scala:116)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    Occurred at table row 0 (zero based, not counting headings), which had values ([0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m      start = 20,[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m      end = 10,[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m      otpu (start, end) = List(20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m    )[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX09 - maxTailAux[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- EX10 - otpu[0m[0m

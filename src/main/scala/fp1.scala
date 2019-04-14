@@ -42,9 +42,10 @@ object fp1 {
 
   	//println(factTest)
   	//println(max(List(69,45,1,2,3,4,6,7,19876)))
-
-  	println(sumTail(List(100,100,100)))
-
+  	//println(maxTail(List(1,2,100)))
+  	//println(otpu(100,0))
+  	//val x = List.range(1,10+1)
+  	//println(x)
   }
 
   def fact (n : Int) : Int = {
@@ -53,6 +54,7 @@ object fp1 {
     else
       n * fact (n - 1)
   }
+
   // EXERCISE 1: complete the following definition, so that factTest is the list of integers
   // List(1,2,6,24,120).  You must call the "fact" function (five times) defined above instead of
   // hardcoding the numbers 1,2,6,24,120.
@@ -61,13 +63,11 @@ object fp1 {
   	}
 
   def factTestAux() : List[Int] = {
-
   	val list5 = fact(5)
   	val list4 = fact(4)
   	val list3 = fact(3)
   	val list2 = fact(2)
   	val list1 = fact(1)
-
   	val finalList = List(list1, list2, list3, list4, list5)
   	return finalList
   	}
@@ -148,8 +148,10 @@ object fp1 {
   // maximum of a list of integers.  You must not alter the definition of "maxTail".  Your
   // definition for "maxTailAux" must be recursive and not use while loops.
   def maxTailAux (accumulator : Int, xs : List[Int]) : Int = {
-    
-    -1
+  	xs match{
+  		case Nil => accumulator
+  		case head :: tail => maxTailAux(if (head > accumulator) head else accumulator, tail)
+  	}
   }
 
   def maxTail (xs : List[Int]) : Int = {
@@ -162,9 +164,8 @@ object fp1 {
   // EXERCISE 10: Write a recursive function "otpu" ("upto" backwards) that takes two Int parameters
   // "start" and "end" and produces a "List[Int]" that counts DOWN from "start" to "end" (inclusive
   // at both ends) one at a time.  If "start < end", the empty list must be returned.
-  def otpu (start : Int, end : Int) : List[Int] = {
-    // TODO: Provide definition here.
-    null
-  }
+  def otpu (start : Int, end : Int) : List[Int] = 
+  	if (start < end) return List[Int]()
+    else return List.range(end, start + 1).reverse 
 }
 
