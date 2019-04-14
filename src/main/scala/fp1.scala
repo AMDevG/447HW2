@@ -41,7 +41,9 @@ object fp1 {
   	//println(sum(testList))
 
   	//println(factTest)
-  	println(max(List()))
+  	//println(max(List(69,45,1,2,3,4,6,7,19876)))
+
+  	println(sumTail(List(100,100,100)))
 
   }
 
@@ -111,7 +113,6 @@ object fp1 {
     -1
   }
 
-
   // EXERCISE 7: given the definition of the function "sumTailAux" below, complete the
   // definition of the function "sumTail" so that it also sums a list of integers.  You
   // must not alter the definition of "sumTailAux".  Your definition for "sumTail"
@@ -124,20 +125,22 @@ object fp1 {
   }
 
   def sumTail (xs : List[Int]) : Int = {
-    // TODO: Provide definition here.
-    -1
+    val acc: Int = 0
+    return sumTailAux(acc, xs)
   }
-
 
   // EXERCISE 8: complete the following definition of the function "max" that finds the maximum
   // integer in a list of integers.  Note that no value can be returned when the list is empty,
   // hence the "NoSuchElementException".  Your function MUST be recursive and MUST NOT use a while
   // loop.  You MUST NOT use the "max" method on lists, but can use the "max" method on integers.
   def max (xs : List[Int]) : Int = {
-   	if(xs.isEmpty) throw new NoSuchElementException
-
-   	
-    -1
+   	if(xs.isEmpty){throw new NoSuchElementException("Empty list")}
+   	if(xs.length == 1) return xs(0)
+   	else{
+   		val maxVal = max(xs.tail)
+   		if(maxVal >= xs.head) maxVal
+   		else xs.head
+   	}
   }
 
   // EXERCISE 9: given the definition of the function "maxTail" below, complete the
@@ -145,7 +148,7 @@ object fp1 {
   // maximum of a list of integers.  You must not alter the definition of "maxTail".  Your
   // definition for "maxTailAux" must be recursive and not use while loops.
   def maxTailAux (accumulator : Int, xs : List[Int]) : Int = {
-    // TODO: Provide definition here.
+    
     -1
   }
 
