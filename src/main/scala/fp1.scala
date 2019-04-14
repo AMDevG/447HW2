@@ -31,6 +31,7 @@
 object fp1 {
 
    def main(args: Array[String]): Unit = {
+   	//println(factTest)
    	//println(fib(9))
   	//println(p1)  
   	//println(t1)
@@ -38,6 +39,9 @@ object fp1 {
   	
   	//val testList : List[Int] = List(100,100,100,100)
   	//println(sum(testList))
+
+  	//println(factTest)
+  	println(max(List()))
 
   }
 
@@ -51,10 +55,20 @@ object fp1 {
   // List(1,2,6,24,120).  You must call the "fact" function (five times) defined above instead of
   // hardcoding the numbers 1,2,6,24,120.
   val factTest : List[Int] = {
+  	factTestAux()
+  	}
 
-  	Nil
-    
-  }
+  def factTestAux() : List[Int] = {
+
+  	val list5 = fact(5)
+  	val list4 = fact(4)
+  	val list3 = fact(3)
+  	val list2 = fact(2)
+  	val list1 = fact(1)
+
+  	val finalList = List(list1, list2, list3, list4, list5)
+  	return finalList
+  	}
 
   // EXERCISE 2: complete the following definition of the Fibonacci function.
   def fib (n : Int) : Int = {
@@ -66,7 +80,6 @@ object fp1 {
     -1
   }
 
-  
   // EXERCISE 3: declare the identifier "p1" with a pair consisting of the Int 7 and the String
   // "hello"
   val p1 : (Int, String) = {
@@ -121,7 +134,9 @@ object fp1 {
   // hence the "NoSuchElementException".  Your function MUST be recursive and MUST NOT use a while
   // loop.  You MUST NOT use the "max" method on lists, but can use the "max" method on integers.
   def max (xs : List[Int]) : Int = {
-    // TODO: Provide definition here.
+   	if(xs.isEmpty) throw new NoSuchElementException
+
+   	
     -1
   }
 

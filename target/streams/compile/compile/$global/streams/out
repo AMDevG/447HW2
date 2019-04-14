@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\jberr\Desktop\hw\src\main\scala\fp1.scala:44:14: reassignment to val[0m
-[0m[[0m[31merror[0m] [0m[0m  		testList = testList.drop(1)[0m
-[0m[[0m[31merror[0m] [0m[0m  		         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\jberr\Desktop\hw\src\main\scala\fp1.scala:44:16: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: List[Int][0m
+[0m[[0m[31merror[0m] [0m[0m  	println(max(()))[0m
+[0m[[0m[31merror[0m] [0m[0m  	            ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
